@@ -4,5 +4,7 @@
 
 *model.py* is the file that describes the architecture and forward propagation of the model. As the core code, this file is well-annotated. Most of the innovations of my project are in the function *sal_forward* (line 82 to 134 in *model.py*). Class BiPoCNN is the baseline model for comparing. 
 
-If you have fully cloned the scripts and have set the path of original or pre-processed data, you can start training by running "main.py" (without extra params). The tensorboard log will be saved in the same directory. You can change the max number of epoch at line 41 in *main.py*.
+If you have fully cloned the scripts and have set the path of original or pre-processed data, you can start training by running "main.py" (without extra params). The tensorboard log will make a direction ./run in the same directory. You can change the max number of epoch at line 41 in *main.py*.
+
+I am sorry for not having enough time to put all the hyper-parameters in a configuration file. Most model-related params are in *model.py* and others regarding training setup are in *train.py*. I am happy to help if you want to have a clearer understanding of the parameter settings or try other combinations. 
 
