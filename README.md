@@ -8,4 +8,4 @@ If you have fully cloned the scripts and have set the path of original or pre-pr
 
 I am sorry for not having enough time to put all the hyper-parameters in a configuration file. Most model-related params are in *model.py* and others regarding training setup are in *train.py*. I am happy to help if you want to have a clearer understanding of the parameter settings or try other combinations. 
 
-![avatar](http://baidu.com/pic/doge.png)
+![avatar](https://github.com/agnesjn/MSc_Project/blob/master/result.png)
