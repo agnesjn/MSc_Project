@@ -4,7 +4,7 @@
 
 *model.py* is the file that describes the architecture and forward propagation of the model. As the core code, this file is well-annotated. Most of the innovations of my project are in the function *sal_forward* (line 82 to 134 in *model.py*). Class BiPoCNN is the baseline model for comparing. *saliency_map.py* is just to clarify how the saliency map is generated, not used as a part of module in the implementation of the method. 
 
-If you have fully cloned the scripts and have set the path of original or pre-processed data, you can start training by running "main.py" (without extra params). The tensorboard log will make a direction ./run in the same directory. You can change the max number of epoch at line 41 in *main.py*.
+If you have fully cloned the scripts and have set the path of original or pre-processed data, you can **start training by running 'main.py'** (without extra params). The tensorboard log will make a directory ./run in the same directory. You can change the max number of epoch at line 41 in *main.py*.
 
 Below is the result for one test using my full method. The validation accuracy at 24 epoch reaches 0.887. The outcomes of different runs do not vary much.
 ![avatar](https://github.com/agnesjn/MSc_Project/blob/master/result.png)
