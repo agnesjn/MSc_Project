@@ -1,6 +1,6 @@
 ## Training Guideline
 
-*data\_prepare.py* transforms original BiPo and AmBe data into 16bit ndArray and also produces the variance map as the auxiliary data for training. You need to fill in the paths of original data at line 39 and 40 of *data\_prepare.py*. The generated data will saved at the place same as this script by default. You can also download the data [here](https://drive.google.com/file/d/1IyxCEBWta744_XV84O4yfW-ESO1oDZXT/view?usp=sharing) and put them directly in the folder of the script.
+*data\_prepare.py* transforms original BiPo and AmBe data into 16bit ndArray and also produces the variance map as the auxiliary data for training. You need to fill in the paths of original data at line 39 and 40 of *data\_prepare.py*. The generated data will saved at the place same as this script by default. You can also download the data [here](https://drive.google.com/file/d/1IyxCEBWta744_XV84O4yfW-ESO1oDZXT/view?usp=sharing) and put them directly in the folder of the script. Same with the original code, here I use 2/3 data for training and 1/3 for testing. 
 
 *model.py* is the file that describes the architecture and forward propagation of the model. As the core code, this file is well-annotated. Most of the innovations of my project are in the function *sal_forward* (line 82 to 134 in *model.py*). Class BiPoCNN is the baseline model for comparing. 
 
