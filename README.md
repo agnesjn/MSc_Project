@@ -7,13 +7,13 @@ This repository is the source code of my work in 2020-2021 MSc Individual Projec
 
 ## Training and evaluation
 
-After fully cloning the scripts and setting the path of original or pre-processed data, you can **start training by running 'main.py'** (without extra params). Tensorboard SummaryWriter will make a directory ./run in the same directory and save the running logs and performance. You can change the max number of epoch at line 41 in *main.py*.
+After fully cloning the scripts and setting the path of original or pre-processed data, you can **start training by running 'main.py'** (without extra params). Tensorboard SummaryWriter will make a directory ./run in the project folder to save the running logs and performance of each run. You can change the max number of epoch at line 41 in *main.py*.
 
 If you want to skip the training process and **just inference on the test data**, the pre-trained model is [here](https://drive.google.com/file/d/1bu1Wq4BEnIGOtb0OByHR9LrEDQlBqXYM/view?usp=sharing) to download. Put the downloaded model in the project file and run *eval.py* to evaluate on test set. If everything is right, this should give a 88.7% accuracy.
 
 ## File explaination
 
-*model.py* is the file that describes the architecture and forward propagation of the model. As the core code, this file is well-annotated. Most of the innovations of my project are in the function *sal_forward* (line 82 to 134 in *model.py*). Class BiPoCNN is the baseline model for comparing. *saliency_map.py* is just to clarify how the saliency map is generated, not used as a part of module in the implementation of the method. 
+*model.py* contains functions and classes that describe the architecture and forward propagation of the model. As the core code, this file is well-annotated. Most of the innovations of my project are in the function *sal_forward* (line 82 to 134 in *model.py*). Class BiPoCNN is the baseline model for comparing. *saliency_map.py* is just to clarify how the saliency map is generated, not used as a part of module in the implementation of the method. 
 
 ## Training snapshot
 
