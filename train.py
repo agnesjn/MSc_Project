@@ -48,7 +48,7 @@ def train(model, optimizer, optimizer_arch, loss_fn, train_loader, epoch, writer
             writer.add_scalar('Loss/train', loss.item(), len(train_loader) * (epoch - 1) + id)
             writer.add_scalar('Accuracy/train', train_acc, len(train_loader) * (epoch - 1) + id)
             print('{} TRAINING: Epoch {}, Loss {}, Accuracy {}'.format(id, epoch, loss, train_acc))
-            print(model.weight2)
+
         torch.cuda.empty_cache() 
     return train_loss, train_acc
 
