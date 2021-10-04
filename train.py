@@ -1,4 +1,4 @@
-import datetime  # <1>
+# import datetime  # <1>
 import torch
 import numpy as np
 from sklearn.metrics import accuracy_score

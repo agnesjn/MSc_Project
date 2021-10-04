@@ -2,6 +2,17 @@
 
 This repository is the source code of my work in 2020-2021 MSc Individual Project in Imperial College London, under the guidance of professor Antonin Vacheret.
 
+## Requirements
+
+|  Package   | Version  |
+|  ----  | ----  |
+| torch | 1.9.0+cu111 |
+| torchvision  | 0.10.0+cu111 |
+| scikit-learn  | 0.23.2 |
+| scipy  | 1.5.2 |
+|tensorboard     |        2.6.0|
+|numpy           |        1.19.5|
+
 ## Data preparation
 *data\_prepare.py* transforms original BiPo and AmBe pulse data into float16 ndArray and also produces the variance map as auxiliary data for training. You can either download preprocessed data or run this script to get the required formatted data. To generate training and test data from raw, you need to **fill in the paths** of original data at line 39 and 40 of *data\_prepare.py*. The output will be saved at the same path as this script by default. You can also **download the data** [here](https://drive.google.com/file/d/1IyxCEBWta744_XV84O4yfW-ESO1oDZXT/view?usp=sharing) and put them directly in the folder of the script. Same with the original code, here I use 2/3 data for training and 1/3 for testing. 
 
